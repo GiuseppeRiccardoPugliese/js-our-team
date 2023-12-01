@@ -8,6 +8,9 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sotto forma di stringhe
 */
 
+const teamNames = document.getElementById('member_team');
+
+//MILESTONE 0:
 //Creo il mio array di oggetti (con i dati forniti)
 const arrayTeam = [
     {
@@ -41,3 +44,24 @@ const arrayTeam = [
         "image": "barbara-ramos-graphic-designer.jpg"
     }
 ];
+
+//MILESTONE 1:
+//Creo il mio ciclo for per stampare in console nome, ruolo e la stringa della foto per ogni componente del team
+for (let i = 0; i < arrayTeam.length; i++) {
+
+    let teamMemberIesimo = arrayTeam[i];
+    // console.log(teamMemberIesimo);
+
+    let memberName = teamMemberIesimo.name;
+    let memberRole = teamMemberIesimo.role;
+    let memberPhotoString = teamMemberIesimo.image;
+
+    console.log(memberName, memberRole, memberPhotoString);
+}
+
+//MILESTONE 2:
+//Stampare le stesse informazioni su DOM sotto forma di stringhe
+for (let key in arrayTeam) {
+    console.log(key, arrayTeam[key]);
+    teamNames.innerHTML = arrayTeam;
+}

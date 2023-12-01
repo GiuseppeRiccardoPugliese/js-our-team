@@ -57,7 +57,7 @@ for (let i = 0; i < arrayTeam.length; i++) {
     let memberPhotoString = teamMemberIesimo.image;
 
     console.log(memberName, memberRole, memberPhotoString);
-    teamNames.innerHTML = `${memberName} ${memberRole} ${memberPhotoString}`;
+    teamNames.innerHTML += `${memberName} ${memberRole} ${memberPhotoString}`;
 }
 
 //MILESTONE 2:

@@ -57,11 +57,12 @@ for (let i = 0; i < arrayTeam.length; i++) {
     let memberPhotoString = teamMemberIesimo.image;
 
     console.log(memberName, memberRole, memberPhotoString);
+    teamNames.innerHTML = `${memberName} ${memberRole} ${memberPhotoString}`;
 }
 
 //MILESTONE 2:
 //Stampare le stesse informazioni su DOM sotto forma di stringhe
-for (let key in arrayTeam) {
-    console.log(key, arrayTeam[key]);
-    teamNames.innerHTML = arrayTeam;
-}
+// for (let key in arrayTeam) {
+//     console.log(key, arrayTeam[key]);
+//     // teamNames.innerHTML = arrayTeam;
+// }
